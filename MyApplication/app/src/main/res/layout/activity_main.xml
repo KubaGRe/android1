@@ -4,24 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:gravity="center|top"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
 
-
-    <EditText
-        android:id="@+id/edit_message"
+    <TextView
+        android:paddingTop="100px"
+        android:textSize="100px"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:hint="@string/edit_message"/>
+        android:paddingBottom="100px"
+        android:text="0" />
 
     <Button
+        android:layout_marginTop="300px"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_send"
-        android:onClick="sendMessage"/>
+
+        android:onClick="decrease"
+        android:text="@string/button_decrease" />
+
+    <Button
+        android:layout_marginTop="100px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="increase"
+        android:text="@string/button_increase" />
+
+    <Button
+        android:layout_marginTop="100px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="zero"
+        android:text="@string/button_zero" />
 </LinearLayout>
