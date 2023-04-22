@@ -10,6 +10,7 @@
 
 
     <TextView
+        android:id="@+id/counter_view"
         android:paddingTop="100px"
         android:textSize="100px"
         android:layout_width="wrap_content"
@@ -17,25 +18,28 @@
         android:paddingBottom="100px"
         android:text="0" />
 
+
     <Button
         android:layout_marginTop="300px"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:onClick="decrease"
-        android:text="@string/button_decrease" />
-
-    <Button
-        android:layout_marginTop="100px"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="increase"
+        android:onClick="increaseCounter"
         android:text="@string/button_increase" />
 
     <Button
         android:layout_marginTop="100px"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="zero"
+
+        android:onClick="decreaseCounter"
+        android:text="@string/button_decrease" />
+
+
+
+    <Button
+        android:layout_marginTop="100px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="zeroCounter"
         android:text="@string/button_zero" />
 </LinearLayout>
